@@ -1,7 +1,11 @@
-These are different errors I encounter while working on HPC. Sometimes it is not easy to understand the main cause of the problem unless with many try and error efforts.
-- segmentation fault: mainly happens because the code can't find a pointer. In C filnames are a string and intrinsically a pointer. So if the code can't find a file and you didn't put exception handling in place you will see this error. 
+These are different errors I encounter while working on HPC. Sometimes it is not easy to understand
+the main cause of the problem unless with many try and error efforts.
+- segmentation fault: mainly happens because the code can't find a pointer. In C filnames are a string
+and intrinsically a pointer. So if the code can't find a file and you didn't put exception handling in place
+you will see this error. 
 It also could happen if you are out of size for array especially if you have used a dynamic array (malloc).
 
-- DTO completion error: This is hardware related error. The main reson I have seen this error was on memory allocation. If you need more memory but your device doesn't have the memory you need.
+- DTO completion error: This is hardware related error. The main reson I have seen this error was on memory allocation. 
+If you need more memory but your device doesn't have the memory you need.
 
 - Assertion failed: low memory or no hard disk space.
